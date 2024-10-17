@@ -1,12 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './Timer.css';
 
 const CountdownTimer = () => {
-  const targetDate = new Date('2024-10-28T11:00:00'); // October 28th at 11 PM
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-
-  function calculateTimeLeft() {
-    const difference = targetDate - new Date();
+  const calculateTimeLeft = useCallback(() => {
+    const difference = new Date('2024-10-28T11:00:00') - new Date();
     if (difference > 0) {
       return {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
@@ -16,7 +13,9 @@ const CountdownTimer = () => {
       };
     }
     return { days: 0, hours: 0, minutes: 0, seconds: 0 };
-  }
+  }, []);
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -24,11 +23,11 @@ const CountdownTimer = () => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [calculateTimeLeft]);
 
   return (
     <div className="timer-main relative bg-black p-8 text-white font-bold mt-12 mb-12 w-4/5 mx-auto text-center lg:mb-16" style={{ height: '70vh', fontFamily:"Hitmarker" }}>
-      {/* Orange offset shadow */}  
+      {/* Orange offset shadow */}
       <div className="absolute inset-0 bg-orange-500 transform translate-x-2 translate-y-2 -z-10"></div>
       {/* Main content */}
       <div className="bg-black p-8 relative z-10 h-full flex flex-col justify-center items-center">

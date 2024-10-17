@@ -19,28 +19,28 @@ const Sponsors = () => {
         <div className="slider">
           <div className="slide-track">
             <div className="slide">
-              <img className="sponsor-img" src={SIGKDD} alt="Image 1" />
+              <img className="sponsor-img" src={SIGKDD} alt="Img" />
             </div>
             <div className="slide">
-              <img className="sponsor-img" src={ACM} alt="Image 2" />
+              <img className="sponsor-img" src={ACM} alt="Img" />
             </div>
             <div className="slide">
-              <img className="sponsor-img" src={DSBS} alt="Image 3" />
+              <img className="sponsor-img" src={DSBS} alt="Img" />
             </div>
             <div className="slide">
-              <img className="sponsor-img" src={SRM} alt="Image 4" />
+              <img className="sponsor-img" src={SRM} alt="Img" />
             </div>
             <div className="slide">
-              <img className="sponsor-img" src={SIGKDD} alt="Image 1" />
+              <img className="sponsor-img" src={SIGKDD} alt="Img" />
             </div>
             <div className="slide">
-              <img className="sponsor-img" src={ACM} alt="Image 2" />
+              <img className="sponsor-img" src={ACM} alt="Img" />
             </div>
             <div className="slide">
-              <img className="sponsor-img" src={DSBS} alt="Image 3" />
+              <img className="sponsor-img" src={DSBS} alt="Img" />
             </div>
             <div className="slide">
-              <img className="sponsor-img" src={SRM} alt="Image 4" />
+              <img className="sponsor-img" src={SRM} alt="Img" />
             </div>
           </div>
         </div>

@@ -67,6 +67,7 @@
         display: flex;
         justify-content: space-between;
         padding: 0 10px;
+        margin-left: 0vh;
         font-size: 6vh;
     }
 

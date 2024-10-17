@@ -27,7 +27,7 @@ const CountdownTimer = () => {
   }, []);
 
   return (
-    <div className="timer-main relative bg-black p-8 text-white font-bold mt-12 mb-12 w-4/5 mx-auto text-center lg:mb-16" style={{ height: '70vh' }}>
+    <div className="timer-main relative bg-black p-8 text-white font-bold mt-12 mb-12 w-4/5 mx-auto text-center lg:mb-16" style={{ height: '70vh', fontFamily:"Hitmarker" }}>
       {/* Orange offset shadow */}  
       <div className="absolute inset-0 bg-orange-500 transform translate-x-2 translate-y-2 -z-10"></div>
       {/* Main content */}

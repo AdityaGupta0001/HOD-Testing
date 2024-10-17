@@ -44,7 +44,7 @@ const Cards = () => {
     <div className="lg:mt-16 px-12 py-6">
       <div className="flex justify-center items-center mb-8">
         <div
-          className="text-6xl mt-2 text-white tracking-wider"
+          className="text-6xl mt-2 text-center text-white tracking-wider"
           style={{ fontFamily: 'Black Ops One, sans-serif' }}
         >
           CHOOSE YOUR MISSION
@@ -81,12 +81,12 @@ const Cards = () => {
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-xl font-bold text-amber-500">
+                <h3 className="text-xl text-center font-bold text-amber-500" style={{fontFamily:"Hitmarker"}}>
                   {mission.name}
                 </h3>
               </div>
             </CardContent>
-            <CardHoverLayer className="card-hover-layer">
+            <CardHoverLayer className="card-hover-layer" style={{fontFamily:"Hitmarker"}}>
               <CardDescription>{mission.description}</CardDescription>
             </CardHoverLayer>
           </Card>

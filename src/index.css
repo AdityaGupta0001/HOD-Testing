@@ -14,14 +14,15 @@
 body {
     cursor: url('assets/confirm.png'), auto;
     background-image: linear-gradient(to bottom, #ff7200, black);
+    background-size: 100% 100vh;
     background-attachment: fixed;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     body {
         background-image: url('assets/gradientX.png');
     }
-}
+} */
 
 .crosshair-cursor {
     cursor: url('assets/confirm.png'), auto;

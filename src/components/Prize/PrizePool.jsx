@@ -20,7 +20,7 @@ const PrizePool = () => {
         <h2 style={{ fontFamily: "Black Ops One, sans-serif" }} className="text-5xl md:text-6xl text-white text-center mb-12">
           Prize Pool: ₹30,000
         </h2>
-        <div className="flex flex-col lg:flex-row gap-4">
+        <div className="flex flex-col lg:flex-row gap-4 " style={{fontFamily:"Hitmarker"}}>
           <PrizeCard 
             place="1st Place" 
             amount="15,000" 

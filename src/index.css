@@ -1,0 +1,40 @@
+/* Import Google font */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+/* Tailwind base, components, and utilities */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: 'Hitmarker';
+    src: url('assets/fonts/HitmarkerText-Regular.ttf') format('truetype');
+}
+
+body {
+    cursor: url('assets/confirm.png'), auto;
+    background-image: linear-gradient(to bottom, #ff7200, black);
+    background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url('assets/gradientX.png');
+    }
+}
+
+.crosshair-cursor {
+    cursor: url('assets/confirm.png'), auto;
+    }
+.button-cursor {
+    cursor: url('assets/buttoncursor.png'), auto;
+    }
+button {
+    cursor: url('assets/buttoncursor.png'), auto;
+    /* Default cursor for buttons */
+}
+/* Custom background separator styling */
+.bg-sep {
+    position: relative;
+    height: 1vh;
+}

@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@cloudinary/react": "^1.13.0",
+    "@cloudinary/url-gen": "^1.21.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "cloudinary-video-player": "^2.1.0",
     "clsx": "^2.1.1",
     "gsap": "^3.12.5",
     "hack-of-duty": "file:",
@@ -49,6 +52,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "autoprefixer": "^10.4.20",
+    "dotenv": "^16.4.5",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13"
   }

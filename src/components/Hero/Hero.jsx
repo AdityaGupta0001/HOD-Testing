@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import Image from '../../assets/herohai.webp';
-import targetVid from '../../assets/target.webm';
 import "./Hero.css";
 import aud from "../../assets/thaithai.mp3";
+import BgVideoPlayer from '../VideoPlayer/BgVideoPlayer';
 
 const NeonButton = ({ text = 'Register Now' }) => {
   const audioRef = useRef(null);
@@ -104,9 +104,10 @@ export const Hero = () => {
 
   return (
     <div ref={heroRef} className="parent h-screen flex flex-col crosshair-cursor">
-      <video id="video" autoPlay loop muted>
+      {/* <video id="video" autoPlay loop muted>
         <source src={targetVid} type='video/webm' />
-      </video>
+      </video> */}
+      <BgVideoPlayer publicId={process.env.REACT_APP_HUD_BACKGROUND_PUBLIC_ID}/>
       <div className="hero flex flex-col flex-1 gap-10 h-1/2">
         <div className="hero-title flex flex-col w-full text-5xl">
           <span className='flex ml-8 justify-start'>HACK&nbsp;OF</span>

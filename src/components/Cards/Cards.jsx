@@ -7,33 +7,30 @@ import {
   CardDescription,
 } from '../ui/card.jsx';
 
-import Hijacked from '../../assets/Hijacked.webm';
-import Shipment from '../../assets/Shipment.webm';
-import FiringRange from '../../assets/FiringRange.webm';
-import Rust from '../../assets/Rust.webm';
+import CardVideoPlayer from '../VideoPlayer/CardVideoPlayer.jsx';
 
 const missions = [
   {
     name: 'HEALTHCARE',
-    image: Hijacked,
+    publicId: process.env.REACT_APP_COD_HIJACKED_CINEMATIC_PUBLIC_ID,
     description:
       'Gear up and deploy cutting-edge solutions that can be game-changers in the medical field. Whether you\'re crafting AI-driven diagnostics or building advanced systems to improve patient care, this mission is about creating tech that saves lives.',
   },
   {
     name: 'NLP',
-    image: Rust,
+    publicId: process.env.REACT_APP_COD_RUST_CINEMATIC_PUBLIC_ID,
     description:
       'Engage in Natural Language Processing, where words are your weapon. Just like calling out targets in COD, your models will understand, interpret, and respond with precision. Deploy algorithms that crack the language code and conquer communication.',
   },
   {
     name: 'OPEN CV',
-    image: Shipment,
+    publicId: process.env.REACT_APP_COD_SHIPMENT_CINEMATIC_PUBLIC_ID,
     description:
       'Enter the battlefield of Computer Vision, where your AI sees the world like a UAV in COD. Train models to detect, track, and analyze with pinpoint accuracy. Your mission: ensure no object goes unseen, no detail missed.',
   },
   {
     name: 'EDTECH',
-    image: FiringRange,
+    publicId: process.env.REACT_APP_COD_FIRING_RANGE_CINEMATIC_PUBLIC_ID,
     description:
       'Gear up for the EdTech track, where you\'ll revolutionize learning like a tactical strike in COD. Build tools that empower students and educators, ensuring knowledge is deployed swiftly and effectively. Education is your mission; innovation is your weapon.',
   },
@@ -70,7 +67,7 @@ const Cards = () => {
           >
             <CardContent className="p-0">
               <div className="overflow-hidden">
-                <video
+                {/* <video
                   autoPlay
                   loop
                   muted
@@ -78,7 +75,8 @@ const Cards = () => {
                   alt={mission.name}
                   style={{ width: '100%', height: '420px' }}
                   className="object-cover"
-                />
+                /> */}
+                <CardVideoPlayer publicId={mission.publicId}/>
               </div>
               <div className="p-4">
                 <h3 className="text-xl text-center font-bold text-amber-500" style={{fontFamily:"Hitmarker"}}>

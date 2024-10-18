@@ -1,0 +1,10 @@
+.video {
+    position: absolute;
+    mix-blend-mode: screen;
+    object-fit: cover;
+    opacity: 40%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
+}
